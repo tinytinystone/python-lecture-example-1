@@ -4,9 +4,44 @@
 *::after {
   box-sizing: border-box;
 }
+html {
+  font-size: 10px;
+}
+body {
+  min-width: 1060px;
+  font-size: 1.8rem;
+}
+
 /* HEADER */
 .header {
   background: yellow;
+}
+.container-float {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 4%;
+}
+.container-float::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.logo {
+  float: left;
+  margin: 0;
+}
+.meta {
+  float: left;
+  margin: 0;
+}
+.top-nav {
+  float: right;
+}
+.list {
+  margin: 0;
+}
+.list-item {
+  display: inline-block;
 }
 
 /* MAIN */
