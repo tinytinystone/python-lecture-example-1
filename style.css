@@ -160,6 +160,29 @@ hr {
   font-size: 2.4rem;
   padding: 20px 0 0 130px;
 }
+.list-features i {
+  position: absolute;
+  top: 22px;
+  left: 3px;
+  font-size: 40px;
+  width: 85px;
+  height: 85px;
+  border-radius: 50px;
+  padding: 20px;
+  text-align: center;
+  color: #f1fff7;
+  background: #20aa76;
+  animation-duration: 1.5s;
+  animation-name: turn;
+}
+@keyframes turn {
+  from {
+    transform: rotate(0.5turn);
+  }
+  to {
+    transform: rotate(0turn);
+  }
+}
 .feature-desc {
   margin: 1.8rem 0;
   padding: 0 60px 20px 130px;
