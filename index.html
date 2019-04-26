@@ -95,9 +95,18 @@
                   Get help with Django and follow announcements.
                 </p>
                 <form action="#" class="mailing-form">
-                  <!-- FIXME: form 영역 추가 -->
+                  <label for="email-contribute" class="readable-hidden"
+                    >send e-mail for following news</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="Enter email"
+                    id="email-contribute"
+                    name="email-contribute"
+                  />
+                  <button type="submit" class="mailing-form-btn">Submit</button>
                 </form>
-                <p class="mailing-meta">
+                <p class="meta mailing-meta">
                   You can also subscribe by sending an email to
                   <a href="mailto:django-users+subscribe@googlegroups.com"
                     >django-users+subscribe@googlegroups.com</a
@@ -111,9 +120,18 @@
                   Contribute to the development of Django itself.
                 </p>
                 <form action="#" class="mailing-form">
-                  <!-- FIXME: form 영역 추가 -->
+                  <label for="email-contribute" class="readable-hidden"
+                    >send e-mail for contribution</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="Enter email"
+                    id="email-contribute"
+                    name="email-contribute"
+                  />
+                  <button type="submit" class="mailing-form-btn">Submit</button>
                 </form>
-                <p class="mailing-meta">
+                <p class="meta mailing-meta">
                   Before asking a question about how to contribute, read
                   <a
                     href="https://docs.djangoproject.com/en/dev/internals/contributing/"
