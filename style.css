@@ -178,6 +178,16 @@ hr {
   text-align: center;
   color: #f1fff7;
   background: #20aa76;
+  animation-duration: 1.5s;
+  animation-name: turn;
+}
+@keyframes turn {
+  from {
+    transform: rotate(0.5turn);
+  }
+  to {
+    transform: rotate(0turn);
+  }
 }
 .feature-title {
   position: relative;
