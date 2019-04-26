@@ -111,16 +111,16 @@ a {
   font-size: 3.6rem;
   line-height: 1.3;
 }
-.cta {
+.hero-cta {
   width: 300px;
   padding: 2rem 5rem;
   margin: 20px auto 60px;
   background: #44b78b;
   color: #fff;
 }
-.cta:focus,
-.cta:hover,
-.cta:active {
+.hero-cta:focus,
+.hero-cta:hover,
+.hero-cta:active {
   background-color: #51be95;
 }
 
