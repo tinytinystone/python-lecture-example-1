@@ -340,6 +340,11 @@ hr {
   color: #25c488;
   list-style: none;
 }
+.list-side-item::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f15c";
+  margin-right: 1rem;
+}
 .list-communities,
 .list-foundation {
   margin: 20px 0;
