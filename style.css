@@ -234,10 +234,127 @@ hr {
   text-decoration: underline;
 }
 
+/* SIDE CONTENT */
 .side-content {
-  background: pink;
   float: right;
-  width: 30%;
+  width: 34%;
+  margin: 0;
+  padding: 0 0 30px 20px;
+  border-left: 1px solid #cfe3dc;
+}
+.side-content a {
+  text-decoration: none;
+}
+.side-content a:hover,
+.side-content a:focus,
+.side-content a:active {
+  color: #25c488;
+}
+.container-side-cta {
+  text-align: center;
+}
+.side-cta {
+  width: 330px;
+  background: #44b786;
+  color: #fff;
+  padding: 16px 24px;
+  margin: 40px auto 20px;
+}
+.side-cta:focus,
+.side-cta:hover,
+.side-cta:active {
+  color: #fff;
+  background: #51be95;
+}
+.side-content em {
+  font-style: normal;
+  color: #c9f0dd;
+}
+.more {
+  display: block;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #20aa76;
+}
+.more::after {
+  content: " >";
+}
+.fundraising-title {
+  font-size: 2rem;
+  font-weight: 400;
+  border-bottom: 1px solid #cfe3dc;
+  margin-top: 3.5rem;
+  padding-bottom: 1rem;
+}
+.small-heart {
+  display: block;
+  float: left;
+  margin: 25px 15px 20px 0;
+}
+.small-cta {
+  display: block;
+  padding-top: 20px;
+  font-size: 1.4rem;
+  color: #20aa76;
+  line-height: 2;
+}
+.infos {
+  margin-bottom: 40px;
+}
+.infos-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  border-bottom: 1px solid #cfe3dc;
+  margin: 3.5rem 0 0 0;
+  padding-bottom: 1rem;
+}
+.news-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #20aa76;
+}
+.news-article {
+  padding: 20px 0;
+}
+.news-article:not(:first-of-type) {
+  border-top: 1px solid #cfe3dc;
+}
+.news-desc {
+  font-size: 1.5rem;
+}
+.news-meta {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #859d94;
+}
+.list-side {
+  padding: 0;
+  margin: 20px 0;
+}
+.list-side-item {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  color: #25c488;
+  list-style: none;
+}
+.list-communities,
+.list-foundation {
+  margin: 20px 0;
+}
+.community-title,
+.foundation-title {
+  font-size: 1.4rem;
+  color: #25c488;
+  margin-top: 14px;
+}
+.community-desc,
+.foundation-desc {
+  margin: 10px 0 0 0;
+  font-size: 1.4rem;
+  color: #859d94;
 }
 
 /* CONTENT-INFO */
