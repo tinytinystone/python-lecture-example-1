@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./style.css" />
     <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
       integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y"
       crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,400&subset=latin"
     />
     <title>The Web framework for perfectionists with deadlines | Django</title>
   </head>
@@ -89,7 +89,7 @@
                 to quickly and flexibly scale.
               </dd>
             </dl>
-            <a href="#" class="main-cta cta">
+            <a href="#" class="cta main-cta">
               Learn more about Django
             </a>
           </section>
@@ -106,15 +106,18 @@
                   Get help with Django and follow announcements.
                 </p>
                 <form action="#" class="mailing-form">
-                  <label for="email-follow">
-                    <input
-                      type="email"
-                      placeholder="Enter email"
-                      id="email-follow"
-                      name="email-follow"
-                    />
-                  </label>
-                  <button type="submit" class="mailing-form-btn">Submit</button>
+                  <label for="email-contribute" class="readable-hidden"
+                    >send e-mail for following news</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="Enter email"
+                    id="email-contribute"
+                    name="email-contribute"
+                  />
+                  <button type="submit" class="mailing-form-btn">
+                    <i class="far fa-envelope"></i>
+                  </button>
                 </form>
                 <p class="meta mailing-meta">
                   You can also subscribe by sending an email to
@@ -130,15 +133,18 @@
                   Contribute to the development of Django itself.
                 </p>
                 <form action="#" class="mailing-form">
-                  <label for="email-contribute">
-                    <input
-                      type="email"
-                      placeholder="Enter email"
-                      id="email-contribute"
-                      name="email-contribute"
-                    />
-                  </label>
-                  <button type="submit" class="mailing-form-btn">Submit</button>
+                  <label for="email-contribute" class="readable-hidden"
+                    >send e-mail for contribution</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="Enter email"
+                    id="email-contribute"
+                    name="email-contribute"
+                  />
+                  <button type="submit" class="mailing-form-btn">
+                    <i class="far fa-envelope"></i>
+                  </button>
                 </form>
                 <p class="meta mailing-meta">
                   Before asking a question about how to contribute, read
@@ -148,7 +154,7 @@
                   >. Many frequently asked questions are answered there.
                 </p>
                 <hr />
-                <p class="meta mailing-meta">
+                <p class="mailing-meta">
                   You can also subscribe by sending an email to
                   <a href="mailto:django-developers+subscribe@googlegroups.com"
                     >django-developers+subscribe@googlegroups.com</a
@@ -221,7 +227,9 @@
           <div class="docs-for-starters infos">
             <h3 class="infos-title">New to Django?</h3>
             <ul class="list-side">
-              <li class="list-side-item"><a href="#">Installation guide</a></li>
+              <li class="list-side-item">
+                <a href="#">Installation guide</a>
+              </li>
               <li class="list-side-item">
                 <a href="#">Write your first Django app</a>
               </li>

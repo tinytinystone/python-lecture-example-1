@@ -43,6 +43,16 @@ hr {
   text-align: center;
 }
 
+/* READABLE-HIDDEN */
+.readable-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
 /* HEADER */
 .header {
   background: #0c4b33;
@@ -68,7 +78,6 @@ hr {
 .meta.header-meta {
   float: left;
   width: 180px;
-  display: block;
   font-size: 1.3rem;
   color: #44b790;
   margin: 3px 0 0 12px;
@@ -93,7 +102,9 @@ hr {
   padding: 10px;
   display: block;
 }
-.top-nav a:hover {
+.top-nav a:hover,
+.top-nav a:focus,
+.top-nav a:active {
   color: #c9f0dd;
 }
 
@@ -155,11 +166,6 @@ hr {
 .list-features {
   margin: 4rem 0 5rem;
 }
-.feature-title {
-  position: relative;
-  font-size: 2.4rem;
-  padding: 20px 0 0 130px;
-}
 .list-features i {
   position: absolute;
   top: 22px;
@@ -182,6 +188,11 @@ hr {
   to {
     transform: rotate(0turn);
   }
+}
+.feature-title {
+  position: relative;
+  font-size: 2.4rem;
+  padding: 20px 0 0 130px;
 }
 .feature-desc {
   margin: 1.8rem 0;
@@ -208,7 +219,6 @@ hr {
 }
 .mailing.col {
   float: left;
-  -width: 70%;
   width: 48%;
 }
 .mailing:first-child {
@@ -241,6 +251,16 @@ hr {
   color: #44b78b;
   border: none;
   background: transparent;
+  cursor: pointer;
+}
+.mailing-form-btn:hover,
+.mailing-form-btn:focus,
+.mailing-form-btn:active {
+  color: #0c4b33;
+}
+.mailing-form-btn i {
+  font-size: 2rem;
+  line-height: 1;
 }
 .mailing-meta {
   margin: 0;
@@ -297,7 +317,7 @@ hr {
   display: block;
   margin-top: 20px;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   color: #20aa76;
 }
@@ -396,15 +416,6 @@ hr {
 .content-info a:hover {
   text-decoration: underline;
   color: #fff;
-}
-/* 숨김처리 */
-.readable-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  margin: -1px;
-  clip: rect(0, 0, 0, 0);
 }
 .links {
   background: #44b78b;
